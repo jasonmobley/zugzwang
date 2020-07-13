@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Chess Picker</title>
+    <script type="module" src="main.js"></script>
+    <script type="module">
+      import { App } from 'main';
+      let app = new App();
+      app.init({
+        whiteColorButton: document.querySelector('#btn-color-white'),
+        blackColorButton: document.querySelector('#btn-color-black'),
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body class="main">
+    <h1>Chess Handicap</h1>
+    <section id="color-selector">
+      <button id="btn-color-white">White</button>
+      <button id="btn-color-black">Black</button>
+    </section>
+    <section id="reset">
+      <button id="btn-reset">Reset</button>
+    </section>
+    <section id="img-container">
+      <img id="img-pawn-white" alt="White Pawn" src="img/pieces/pawn-white.svg">
+      <img id="img-pawn-black" alt="Black Pawn" src="img/pieces/pawn-black.svg">
+      <img id="img-bishop-white" alt="White Bishop" src="img/pieces/bishop-white.svg">
+      <img id="img-bishop-black" alt="Black Bishop" src="img/pieces/bishop-black.svg">
+      <img id="img-knight-white" alt="White Knight" src="img/pieces/knight-white.svg">
+      <img id="img-knight-black" alt="Black Knight" src="img/pieces/knight-black.svg">
+      <img id="img-rook-white" alt="White Rook" src="img/pieces/rook-white.svg">
+      <img id="img-rook-black" alt="Black Rook" src="img/pieces/rook-black.svg">
+      <img id="img-queen-white" alt="White Queen" src="img/pieces/queen-white.svg">
+      <img id="img-queen-black" alt="Black Queen" src="img/pieces/queen-black.svg">
+      <img id="img-king-white" alt="White King" src="img/pieces/king-white.svg">
+      <img id="img-king-black" alt="Black King" src="img/pieces/king-black.svg">
+    </section>
+    <section class="attribution">
+      Chess piece graphics by <a href="https://en.wikipedia.org/wiki/User:Cburnett" class="extiw" title="en:User:Cburnett">Cburnett</a>
+      <span class="int-own-work" lang="en">(own work)</span>
+      using <a href="https://en.wikipedia.org/wiki/Inkscape" class="extiw" title="w:Inkscape">Inkscape</a>.
+      <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,
+      <a href="https://commons.wikimedia.org/w/index.php?curid=1499803">Link</a>
+    </section>
+  </body>
+</html>

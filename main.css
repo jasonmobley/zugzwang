@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  background-color: #888888;
+}
+
+.main.white {
+  background-color: #eeeeee;
+}
+
+.main.black {
+  background-color: #444444;
+}
+
+#reset {
+  display: none;
+}
+.main.white #reset,
+.main.black #reset {
+  display: block;
+}
+
+#img-container img {
+  display: none;
+}
