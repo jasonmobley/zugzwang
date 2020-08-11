@@ -1,20 +1,18 @@
 <!doctype HTML>
 <html>
   <head>
-    <title>Chess Picker</title>
+    <title>Zugzwang</title>
     <script type="module" src="main.js"></script>
     <script type="module">
-      import { App } from 'main';
+      import { App } from './main.js';
       let app = new App();
       app.init({
-        whiteColorButton: document.querySelector('#btn-color-white'),
-        blackColorButton: document.querySelector('#btn-color-black'),
       });
     </script>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body class="main">
-    <h1>Chess Handicap</h1>
+    <h1>Zugzwang</h1>
     <section id="color-selector">
       <button id="btn-color-white">White</button>
       <button id="btn-color-black">Black</button>
@@ -22,6 +20,7 @@
     <section id="reset">
       <button id="btn-reset">Reset</button>
     </section>
+    <canvas id="canvas"></canvas>
     <section id="img-container">
       <img id="img-pawn-white" alt="White Pawn" src="img/pieces/pawn-white.svg">
       <img id="img-pawn-black" alt="Black Pawn" src="img/pieces/pawn-black.svg">
